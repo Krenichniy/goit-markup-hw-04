@@ -218,8 +218,11 @@ img {
   margin-left: 30px;
 }
 
-.qualities-icon {
+.qualities-icon-container {
+  padding: 25px 100px;
   margin-bottom: 30px;
+
+  background-color: var(--secondary-white-color);
 }
 
 .qualities .title {
@@ -314,8 +317,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+
   color: var(--primary-text-color);
+
+  border-radius: 50%;
 }
 
 .workers-social-icon {
@@ -326,6 +331,36 @@ img {
 .workers-social-link:focus {
   background-color: var(--hover-text-color);
   color: var(--primary-white-color);
+}
+
+/* Наши клиенты */
+
+.clients-title {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+
+.clients-link {
+  display: block;
+  padding: 16px 32px;
+
+  color: var(--primary-text-color);
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--hover-text-color);
+  border: 1px solid var(--hover-text-color);
 }
 
 /* Кнопка */
